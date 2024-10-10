@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+   provider = "prisma-client-js"
+}
+
+datasource db {
+   provider = "postgresql"
+   url      = env("DATABASE_URL")
+}
+
+////////////////////////////////  Users ///////////////////////////////////
+model Users {
+   id          Int           @id @default(autoincrement())
+   firstName   String
+   lastName    String
+   email       String        @unique
+   role        UserRole      @default(employee)
+   status      UserType      @default(permanent)
+   designation String?
+   department  String?
+   bio         String?
+   gender      String?
+   picture     String?
+   country     String?
+   isActive    Boolean       @default(true)
+   userAuth    UserAuth?
+   application Application[]
+   userLeave   UserLeave[]
+   createdAt   DateTime      @default(now())
+   updatedAt   DateTime      @default(now()) @updatedAt
+}
+
+model UserAuth {
+   id        Int      @id @default(autoincrement())
+   userId    Int      @unique
+   user      Users    @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+   method    String
+   password  String
+   createdAt DateTime @default(now())
+   updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum UserType {
+   probationary
+   permanent
+   noticePeriod
+}
+
+enum UserRole {
+   admin
+   humanResources
+   employee
+}
+
+//////////////////////   Leave //////////////////
+model LeaveFormat {
+   id           Int      @id @default(autoincrement())
+   name         String   @unique
+   description  String
+   sickLeave    Int      @default(0)
+   casualLeave  Int      @default(0)
+   periodLeave  Int      @default(0)
+   workFromHome Int      @default(0)
+   createdAt    DateTime @default(now())
+   updatedAt    DateTime @default(now()) @updatedAt
+}
+
+model LeaveType {
+   id          Int            @id @default(autoincrement())
+   name        String         @unique
+   description String
+   frequency   LeaveFrequency @default(yearly)
+   createdAt   DateTime       @default(now())
+   updatedAt   DateTime       @default(now()) @updatedAt
+}
+
+enum LeaveFrequency {
+   daily
+   weekly
+   monthly
+   yearly
+}
+
+////////////////////// Application //////////////////
+
+model Application {
+   id     Int   @id @default(autoincrement())
+   userId Int
+   user   Users @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
+
+////////////////////// UserLeaves //////////////////
+
+model UserLeave {
+   id     Int   @id @default(autoincrement())
+   userId Int
+   user   Users @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
