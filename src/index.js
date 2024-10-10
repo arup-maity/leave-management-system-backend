@@ -21,7 +21,13 @@ process.on("uncaughtException", err => {
    process.exit(1)
 })
 // cors origin define
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(
+   cors({
+      origin: [`${process.env.ALLOWED_ORIGIN}`],
+      allowMethods: ["POST", "GET", "PUT", "DELETE"],
+      credentials: true
+   })
+);
 app.use(express.json());
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: true })) // parse application/x-www-form-urlencoded
@@ -42,7 +48,7 @@ app.use('/api/admin/leave-type', leaveTypeRouter)
 // 
 app.use("/api/demo", demoRouter)
 
-server.listen(process.env.PORT || 8080, () => {
-   console.log(`Port ${process.env.PORT || 8080}`);
+server.listen(process.env.PORT || 8090, () => {
+   console.log(`Port ${process.env.PORT || 8090}`);
    jobStart()
 });
