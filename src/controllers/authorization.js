@@ -13,7 +13,7 @@ export function cookieParams() {
       httpOnly: false,
       secure: true,
       sameSite: 'strict',
-      // domain: process.env.COOKIE_DOMAIN || '.girlpowerx.com',
+      domain: process.env.ENVIRONMENT === 'production' ? '.girlpowertalk.com' : 'localhost',
    };
 }
 
@@ -44,7 +44,7 @@ authorizationRouter.get("/google/callback", async (req, res) => {
          where: { email: user.email }
       })
       if (!findUser) {
-         return res.redirect('http://localhost:3000/console/login?google=error')
+         return res.redirect(`${process.env.ALLOWED_ORIGIN}/dashboard/login?google=error`)
       }
       await prisma.users.update({
          where: { email: user.email },
@@ -62,7 +62,8 @@ authorizationRouter.get("/google/callback", async (req, res) => {
       }
       const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '7d' });
       res.cookie('token', token, cookieParams());
-      return res.redirect('http://localhost:3000/console/login?google=success')
+      return res.redirect(`${process.env.ALLOWED_ORIGIN}/dashboard/login?google=success`)
+
    } catch (error) {
       console.log(error)
       return res.status(500).json({ success: false, error })

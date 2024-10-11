@@ -1,4 +1,4 @@
-const Users = [
+export const UsersData = [
    {
       firstName: 'Aakshi',
       lastName: 'Srivastava',
@@ -688,7 +688,7 @@ const Users = [
       country: 'Morocco'
    },
    {
-      firstName: 'Shaheena'9m,
+      firstName: 'Shaheena',
       lastName: 'Kishnani',
       designation: 'Sr. Associate',
       department: 'Marketing & PR',
