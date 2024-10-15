@@ -1,11 +1,16 @@
 
 import { Router } from 'express'
 import prisma from '../config/prisma.js';
-import { Google } from "arctic";
 import jwt from 'jsonwebtoken';
+import { GoogleAuth } from '../lib/google/index.js';
 
 const authorizationRouter = Router();
-const google = new Google(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET, process.env.GOOGLE_REDIRECT_URL);
+
+const google = new GoogleAuth({
+   clientId: process.env.GOOGLE_CLIENT_ID || "",
+   clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
+   redirectUrl: process.env.GOOGLE_REDIRECT_URL
+});
 
 export function cookieParams() {
    return {
@@ -16,19 +21,13 @@ export function cookieParams() {
       domain: process.env.ENVIRONMENT === 'production' ? '.girlpowertalk.com' : 'localhost',
    };
 }
-
 authorizationRouter.get("/google-login", async (req, res) => {
    try {
-      const url = await google.createAuthorizationURL('', 'girlpowertalk', {
-         scopes: ["profile", "email"]
+      const authorizationUrl = await google.createAuthorizationUrl({
+         scopes: ["profile", "email", "openid"],
+         state: 'home'
       });
-      return res.status(200).json({ success: true, url })
-      // return res.redirect(url)
-      // const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
-      // const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
-      // const GOOGLE_REDIRECT_URL = process.env.GOOGLE_REDIRECT_URL
-
-      // return res.status(200).json({ success: true, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URL })
+      return res.redirect(authorizationUrl)
    } catch (error) {
       console.log(error)
       return res.status(500).json({ success: false, message: 'Error creating authorization', error })
@@ -37,13 +36,7 @@ authorizationRouter.get("/google-login", async (req, res) => {
 authorizationRouter.get("/google/callback", async (req, res) => {
    try {
       const { code } = req.query
-      const tokens = await google.validateAuthorizationCode(code, 'girlpowertalk');
-      const response = await fetch("https://openidconnect.googleapis.com/v1/userinfo", {
-         headers: {
-            Authorization: `Bearer ${tokens.accessToken}`
-         }
-      });
-      const user = await response.json();
+      const user = await google.verifyAuthorizationUser(code);
 
       const findUser = await prisma.users.findUnique({
          where: { email: user.email }
