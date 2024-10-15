@@ -22,8 +22,8 @@ authorizationRouter.get("/google-login", async (req, res) => {
       const url = await google.createAuthorizationURL('', 'girlpowertalk', {
          scopes: ["profile", "email"]
       });
-      // return res.status(200).json({ success: true, url })
-      return res.redirect(url)
+      return res.status(200).json({ success: true, url })
+      // return res.redirect(url)
       // const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
       // const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
       // const GOOGLE_REDIRECT_URL = process.env.GOOGLE_REDIRECT_URL
