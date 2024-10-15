@@ -60,24 +60,22 @@ enum UserRole {
 
 //////////////////////   Leave //////////////////
 model LeaveFormat {
-   id           Int      @id @default(autoincrement())
-   name         String   @unique
-   description  String
-   sickLeave    Int      @default(0)
-   casualLeave  Int      @default(0)
-   periodLeave  Int      @default(0)
-   workFromHome Int      @default(0)
-   createdAt    DateTime @default(now())
-   updatedAt    DateTime @default(now()) @updatedAt
+   id                Int                 @id @default(autoincrement())
+   name              String              @unique
+   description       String?
+   leaveRelationship LeaveRelationship[]
+   createdAt         DateTime            @default(now())
+   updatedAt         DateTime            @default(now()) @updatedAt
 }
 
 model LeaveType {
-   id          Int            @id @default(autoincrement())
-   name        String         @unique
-   description String
-   frequency   LeaveFrequency @default(yearly)
-   createdAt   DateTime       @default(now())
-   updatedAt   DateTime       @default(now()) @updatedAt
+   id                Int                 @id @default(autoincrement())
+   name              String              @unique
+   description       String?
+   frequency         LeaveFrequency      @default(yearly)
+   leaveRelationship LeaveRelationship[]
+   createdAt         DateTime            @default(now())
+   updatedAt         DateTime            @default(now()) @updatedAt
 }
 
 enum LeaveFrequency {
@@ -85,6 +83,19 @@ enum LeaveFrequency {
    weekly
    monthly
    yearly
+}
+
+model LeaveRelationship {
+   id        Int         @id @default(autoincrement())
+   formatId  Int
+   format    LeaveFormat @relation(fields: [formatId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+   typeId    Int
+   type      LeaveType   @relation(fields: [typeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+   value     Float       @default(0.00)
+   createdAt DateTime    @default(now())
+   updatedAt DateTime    @default(now()) @updatedAt
+
+   @@unique([formatId, typeId])
 }
 
 ////////////////////// Application //////////////////

@@ -91,7 +91,13 @@ leaveTypeRouter.get("/all-types", async (req, res) => {
       return res.status(500).json({ success: false, message: 'Something went wrong', error })
    }
 })
-
-
+leaveTypeRouter.get("/type-list", async (req, res) => {
+   try {
+      const types = await prisma.leaveType.findMany()
+      return res.status(200).json({ success: true, message: 'Type list retrieved successfully', types })
+   } catch (error) {
+      return res.status(500).json({ success: false, message: 'Error retrieving type list', error })
+   }
+})
 
 export default leaveTypeRouter

@@ -19,15 +19,16 @@ export function cookieParams() {
 
 authorizationRouter.get("/google-login", async (req, res) => {
    try {
-      // const url = await google.createAuthorizationURL('', 'girlpowertalk', {
-      //    scopes: ["profile", "email"]
-      // });
-      // return res.redirect(url)
-      const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
-      const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
-      const GOOGLE_REDIRECT_URL = process.env.GOOGLE_REDIRECT_URL
+      const url = await google.createAuthorizationURL('', 'girlpowertalk', {
+         scopes: ["profile", "email"]
+      });
+      // return res.status(200).json({ success: true, url })
+      return res.redirect(url)
+      // const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
+      // const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
+      // const GOOGLE_REDIRECT_URL = process.env.GOOGLE_REDIRECT_URL
 
-      return res.status(200).json({ success: true, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URL })
+      // return res.status(200).json({ success: true, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URL })
    } catch (error) {
       console.log(error)
       return res.status(500).json({ success: false, message: 'Error creating authorization', error })
