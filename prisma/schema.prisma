@@ -23,10 +23,11 @@ model Users {
    status      UserType      @default(permanent)
    designation String?
    department  String?
+   joiningData DateTime?
    bio         String?
    gender      String?
    picture     String?
-   country     String?
+   location    String?
    isActive    Boolean       @default(true)
    userAuth    UserAuth?
    application Application[]
