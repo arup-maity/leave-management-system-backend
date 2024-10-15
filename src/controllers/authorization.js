@@ -17,13 +17,17 @@ export function cookieParams() {
    };
 }
 
-
 authorizationRouter.get("/google-login", async (req, res) => {
    try {
-      const url = await google.createAuthorizationURL('user', 'dgdrgregregerger', {
-         scopes: ["profile", "email"]
-      });
-      return res.redirect(url)
+      // const url = await google.createAuthorizationURL('', 'girlpowertalk', {
+      //    scopes: ["profile", "email"]
+      // });
+      // return res.redirect(url)
+      const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID
+      const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET
+      const GOOGLE_REDIRECT_URL = process.env.GOOGLE_REDIRECT_URL
+
+      return res.status(200).json({ success: true, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URL })
    } catch (error) {
       console.log(error)
       return res.status(500).json({ success: false, message: 'Error creating authorization', error })
@@ -32,7 +36,7 @@ authorizationRouter.get("/google-login", async (req, res) => {
 authorizationRouter.get("/google/callback", async (req, res) => {
    try {
       const { code } = req.query
-      const tokens = await google.validateAuthorizationCode(code, 'dgdrgregregerger');
+      const tokens = await google.validateAuthorizationCode(code, 'girlpowertalk');
       const response = await fetch("https://openidconnect.googleapis.com/v1/userinfo", {
          headers: {
             Authorization: `Bearer ${tokens.accessToken}`
@@ -53,7 +57,7 @@ authorizationRouter.get("/google/callback", async (req, res) => {
          }
       })
       const payload = {
-         userId: findUser.id,
+         id: findUser.id,
          fullName: findUser?.firstName ? findUser.firstName + ' ' + findUser.lastName : 'User',
          email: findUser.email,
          picture: findUser.picture,

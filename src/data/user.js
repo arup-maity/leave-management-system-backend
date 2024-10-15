@@ -5,7 +5,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'aakshi.srivastava@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Aashna',
@@ -13,7 +13,7 @@ export const UsersData = [
       designation: 'Chief Legal Officer',
       department: '',
       email: 'aashna.duggal@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Abeerah',
@@ -21,7 +21,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'abeerah.tariq@girlpowertalk.com',
-      country: 'Pakistan'
+      location: 'Pakistan'
    },
    {
       firstName: 'Abhay',
@@ -29,7 +29,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'abhay.pokhrel@girlpowertalk.com',
-      country: 'Nepal'
+      location: 'Nepal'
    },
    {
       firstName: 'Adyasha',
@@ -37,7 +37,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'adyasha.priyadarshini@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Akhilesh',
@@ -45,7 +45,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Business Development',
       email: 'akhilesh.dahiya@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Alex',
@@ -53,7 +53,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'alex.banuelos@girlpowertalk.com',
-      country: 'USA'
+      location: 'USA'
    },
    {
       firstName: 'Amal',
@@ -61,7 +61,7 @@ export const UsersData = [
       designation: 'UI/UX Designer',
       department: 'Technology',
       email: 'amal.mishra@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Amandeep',
@@ -69,7 +69,7 @@ export const UsersData = [
       designation: 'Graphic Designer',
       department: 'Technology',
       email: 'amandeep.singh@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Ananya',
@@ -77,7 +77,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'ananya.kshatriya@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Angus',
@@ -85,7 +85,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Technology',
       email: 'angus.robertson@girlpowertalk.com',
-      country: 'Canada'
+      location: 'Canada'
    },
    {
       firstName: 'Anjo',
@@ -93,7 +93,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'anjo.agbay@girlpowertalk.com',
-      country: 'Philippines'
+      location: 'Philippines'
    },
    {
       firstName: 'Annapurna',
@@ -101,7 +101,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'annapurna.pardhi@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Ann',
@@ -109,7 +109,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'ann.alphons@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Anshika',
@@ -117,7 +117,7 @@ export const UsersData = [
       designation: 'Sr. Writer',
       department: 'Content & Media',
       email: 'anshika.ganjoo@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Anushka',
@@ -125,7 +125,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'anushka.sharma@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Anushree',
@@ -133,15 +133,16 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'anushree.gopalkrishnan@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Arup',
       lastName: 'Maity',
       designation: 'MERN Developer',
       department: 'Technology',
+      role: 'admin',
       email: 'arup.maity@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Ashna',
@@ -149,7 +150,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'ashna.anifer@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Ayushi',
@@ -157,7 +158,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'ayushi.kaushik@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Betelhem',
@@ -165,7 +166,7 @@ export const UsersData = [
       designation: 'Frontend Developer',
       department: 'Technology',
       email: 'betelhem.getachew@girlpowertalk.com',
-      country: 'Ethiopia'
+      location: 'Ethiopia'
    },
    {
       firstName: 'Charima',
@@ -173,7 +174,7 @@ export const UsersData = [
       designation: 'Data Analyst',
       department: 'Technology',
       email: 'charima.jha@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Clare',
@@ -181,7 +182,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'clare.onyango@girlpowertalk.com',
-      country: 'Kenya'
+      location: 'Kenya'
    },
    {
       firstName: 'Dinar',
@@ -189,7 +190,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'dinar.apriliani@girlpowertalk.com',
-      country: 'Indonesia'
+      location: 'Indonesia'
    },
    {
       firstName: 'Dona',
@@ -197,7 +198,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Q & A Tester',
       email: 'dona.das@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Farheen',
@@ -205,7 +206,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'farheen.reshi@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Fathima',
@@ -213,7 +214,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Digital Branding & Strategy',
       email: 'fathima.azma@girlpowertalk.com',
-      country: 'Sri Lanka'
+      location: 'Sri Lanka'
    },
    {
       firstName: 'Fathima',
@@ -221,7 +222,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'fathima.zaida@girlpowertalk.com',
-      country: 'Sri Lanka'
+      location: 'Sri Lanka'
    },
    {
       firstName: 'Fazila',
@@ -229,7 +230,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'fazila.nawaz@girlpowertalk.com',
-      country: 'Pakistan'
+      location: 'Pakistan'
    },
    {
       firstName: 'Frankie',
@@ -237,7 +238,7 @@ export const UsersData = [
       designation: 'Executive Director',
       department: 'Girl Power USA',
       email: 'frankie.picasso@girlpowertalk.com',
-      country: 'Canada'
+      location: 'Canada'
    },
    {
       firstName: 'Gladstein',
@@ -245,7 +246,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'jill.asilum@girlpowertalk.com',
-      country: 'Philippines'
+      location: 'Philippines'
    },
    {
       firstName: 'Graziela',
@@ -253,7 +254,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'graziela.backx@girlpowertalk.com',
-      country: 'Brazil'
+      location: 'Brazil'
    },
    {
       firstName: 'Hillary',
@@ -261,7 +262,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'Girl Power USA',
       email: 'hillary.turyasingura@girlpowertalk.com',
-      country: 'Uganda'
+      location: 'Uganda'
    },
    {
       firstName: 'Hira',
@@ -269,7 +270,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'hira.siddiqui@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Hunnar',
@@ -277,7 +278,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'hunnar.nangru@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Hrutvija',
@@ -285,7 +286,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'hrutvija.moon@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Ili',
@@ -293,7 +294,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'ili.husna@girlpowertalk.com',
-      country: 'Malaysia'
+      location: 'Malaysia'
    },
    {
       firstName: 'Janvi',
@@ -301,7 +302,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Design',
       email: 'janvi.bansal@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Juan',
@@ -309,7 +310,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'juan.diego@girlpowertalk.com',
-      country: 'Columbia'
+      location: 'Columbia'
    },
    {
       firstName: 'Julia',
@@ -317,7 +318,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Researh',
       email: 'julia.amaral@girlpowertalk.com',
-      country: 'Brazil'
+      location: 'Brazil'
    },
    {
       firstName: 'Kashish',
@@ -325,7 +326,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'kashish.sharma@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Kristel',
@@ -333,7 +334,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'kristel.anahaw@girlpowertalk.com',
-      country: 'Philippines'
+      location: 'Philippines'
    },
    {
       firstName: 'Lajwanti',
@@ -341,7 +342,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'lajwanti.menghwar@girlpowertalk.com',
-      country: 'Pakistan'
+      location: 'Pakistan'
    },
    {
       firstName: 'Lara',
@@ -349,7 +350,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'lara.fares@girlpowertalk.com',
-      country: 'Egypt'
+      location: 'Egypt'
    },
    {
       firstName: 'Lintle',
@@ -357,7 +358,7 @@ export const UsersData = [
       designation: 'Analyst',
       department: 'Finance & Investments',
       email: 'lintle.hilda@girlpowertalk.com',
-      country: 'South Africa'
+      location: 'South Africa'
    },
    {
       firstName: 'Mahesh',
@@ -365,7 +366,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Digital Branding & Strategy',
       email: 'mahesh.sathe@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Mansi',
@@ -373,7 +374,7 @@ export const UsersData = [
       designation: 'Data Analyst',
       department: 'Technology',
       email: 'mansi.sapariya@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Maria',
@@ -381,7 +382,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'People & Culture',
       email: 'maria.osorio@girlpowertalk.com',
-      country: 'Philippines'
+      location: 'Philippines'
    },
    {
       firstName: 'Marion',
@@ -389,7 +390,7 @@ export const UsersData = [
       designation: 'Sr. Writer',
       department: 'Content & Media',
       email: 'marion.nekesa@girlpowertalk.com',
-      country: 'Kenya'
+      location: 'Kenya'
    },
    {
       firstName: 'Melissa',
@@ -397,7 +398,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'melissa.delatorre@girlpowertalk.com',
-      country: 'USA'
+      location: 'USA'
    },
    {
       firstName: 'Monali',
@@ -405,7 +406,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'monali.sathe@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Mostapha',
@@ -413,7 +414,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'Digital Branding & Strategy',
       email: 'mostapha.khalifeh@girlpowertalk.com',
-      country: 'Lebanon'
+      location: 'Lebanon'
    },
    {
       firstName: 'Mridul',
@@ -421,7 +422,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'mridul.gupta@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Nairah',
@@ -429,7 +430,7 @@ export const UsersData = [
       designation: 'Sr. Analyst',
       department: 'Finance & Investments',
       email: 'nairah.dinah@girlpowertalk.com',
-      country: 'Mauritius'
+      location: 'Mauritius'
    },
    {
       firstName: 'Namya',
@@ -437,7 +438,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Marketing & PR',
       email: 'namya.sethi@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Neha',
@@ -445,7 +446,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'neha.gavade@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Netra',
@@ -453,7 +454,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'People & Culture',
       email: 'netra.karale@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Niharika',
@@ -461,7 +462,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'niharika.gupta@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Niharika',
@@ -469,7 +470,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'niharika.g@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Nikhil',
@@ -477,7 +478,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'nikhil.makwana@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Nishu',
@@ -485,7 +486,7 @@ export const UsersData = [
       designation: 'WordPress Developer',
       department: 'Technology',
       email: 'nishu.choudhary@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Nitya',
@@ -493,7 +494,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Digital Branding & Strategy',
       email: 'nitya.gupta@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Niyor',
@@ -501,7 +502,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'niyor.sarma@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Norah',
@@ -509,7 +510,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'norah.brenda@girlpowertalk.com',
-      country: 'Kenya'
+      location: 'Kenya'
    },
    {
       firstName: 'Nwankwo',
@@ -517,7 +518,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'nwankwo.ogechukwu@girlpowertalk.com',
-      country: 'Nigeria'
+      location: 'Nigeria'
    },
    {
       firstName: 'Olympica',
@@ -525,7 +526,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'olympica.mehta@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Oratile',
@@ -533,7 +534,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'Finance & Investments',
       email: 'oratile.thothela@girlpowertalk.com',
-      country: 'South Africa'
+      location: 'South Africa'
    },
    {
       firstName: 'Oriana',
@@ -541,7 +542,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'oriana.zamora@girlpowertalk.com',
-      country: 'Peru'
+      location: 'Peru'
    },
    {
       firstName: 'Prachi',
@@ -549,7 +550,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Design',
       email: 'prachi.aggarwal@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Pranjal',
@@ -557,7 +558,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'pranjal.sharma@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Preet',
@@ -565,7 +566,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'preet.parihar@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Racheal',
@@ -573,7 +574,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'racheal.bankole@girlpowertalk.com',
-      country: 'Nigeria'
+      location: 'Nigeria'
    },
    {
       firstName: 'Rachita',
@@ -581,7 +582,7 @@ export const UsersData = [
       designation: 'Co-Founder & Chief Executive Officer',
       department: '',
       email: 'rachita.sharma@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Rahul',
@@ -589,7 +590,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'rahul.yadav@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Rajkumar',
@@ -597,7 +598,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'rajkumar.lodhi@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Rapti',
@@ -605,7 +606,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'rapti.chatterjee@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Rimsha',
@@ -613,7 +614,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'rimsha.wasiq@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Riya',
@@ -621,7 +622,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'riya.dipak@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sakchhi',
@@ -629,7 +630,7 @@ export const UsersData = [
       designation: 'Analyst',
       department: 'Finance & Investments',
       email: 'sakchhi.agarwal@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sandeep',
@@ -637,7 +638,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Q & A Tester',
       email: 'sandeep.kaur@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sanjeev',
@@ -645,7 +646,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'Technology',
       email: 'sanjeev.sharma@girlpowertalk.com',
-      country: 'Australia'
+      location: 'Australia'
    },
    {
       firstName: 'Samaira',
@@ -653,7 +654,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'samaira.choudhary@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sameer',
@@ -661,7 +662,7 @@ export const UsersData = [
       designation: 'Co-Founder & Chief People Officer',
       department: '',
       email: 'sameer.somal@girlpowertalk.com',
-      country: 'USA'
+      location: 'USA'
    },
    {
       firstName: 'Samy',
@@ -669,7 +670,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Digital Branding & Strategy',
       email: 'samy.monir@girlpowertalk.com',
-      country: 'Egypt'
+      location: 'Egypt'
    },
    {
       firstName: 'Sanya',
@@ -677,7 +678,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Legal & Research',
       email: 'sanya.bhutiani@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sara',
@@ -685,7 +686,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'sara.lmarini@girlpowertalk.com',
-      country: 'Morocco'
+      location: 'Morocco'
    },
    {
       firstName: 'Shaheena',
@@ -693,7 +694,7 @@ export const UsersData = [
       designation: 'Sr. Associate',
       department: 'Marketing & PR',
       email: 'shaheena.kishnani@girlpowertalk.com',
-      country: 'Indonesia'
+      location: 'Indonesia'
    },
    {
       firstName: 'Shriya',
@@ -701,7 +702,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Digital Branding & Strategy',
       email: 'shriya.chauhan@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Simrah',
@@ -709,7 +710,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'simrah.malik@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Simran',
@@ -717,7 +718,7 @@ export const UsersData = [
       designation: 'Sr. Writer',
       department: 'Content & Media',
       email: 'simran.singh@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Srishti',
@@ -725,7 +726,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'srishti.singh@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Stefonie',
@@ -733,7 +734,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'stefonie.barrows@girlpowertalk.com',
-      country: 'Jamaica'
+      location: 'Jamaica'
    },
    {
       firstName: 'Stevens',
@@ -741,7 +742,7 @@ export const UsersData = [
       designation: 'Director',
       department: 'Finance & Investments',
       email: 'stevens.forcadell@girlpowertalk.com',
-      country: 'Paraguay'
+      location: 'Paraguay'
    },
    {
       firstName: 'Subashini',
@@ -749,7 +750,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Marketing & PR',
       email: 'subashini.s@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Sudhansu',
@@ -757,7 +758,7 @@ export const UsersData = [
       designation: 'Chief Operating Officer',
       department: '',
       email: 'sudhansu.batra@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Tania',
@@ -765,7 +766,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'People & Culture',
       email: 'tania.chahal@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Tina',
@@ -773,7 +774,7 @@ export const UsersData = [
       designation: 'Associate Director',
       department: 'People & Culture',
       email: 'tina.chawla@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Titania',
@@ -781,7 +782,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'titania.celestine@girlpowertalk.com',
-      country: 'Indonesia'
+      location: 'Indonesia'
    },
    {
       firstName: 'Trent',
@@ -789,7 +790,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Technology',
       email: 'trent.maffeo@girlpowertalk.com',
-      country: 'USA'
+      location: 'USA'
    },
    {
       firstName: 'Tuba',
@@ -797,7 +798,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Content & Media',
       email: 'tuba.malik@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Urvashi',
@@ -805,7 +806,7 @@ export const UsersData = [
       designation: 'Associate',
       department: 'Technology',
       email: 'urvashi.saraswat@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'U',
@@ -813,7 +814,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'us.vidisha@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Vaishali',
@@ -821,7 +822,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'vaishali.bhardwaj@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Vandana',
@@ -829,7 +830,7 @@ export const UsersData = [
       designation: 'Writer',
       department: 'Content & Media',
       email: 'vandana.b@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    },
    {
       firstName: 'Yash',
@@ -837,6 +838,6 @@ export const UsersData = [
       designation: 'Sr. Wordpress Developer',
       department: 'Technology',
       email: 'yash.dhiman@girlpowertalk.com',
-      country: 'India'
+      location: 'India'
    }
 ]

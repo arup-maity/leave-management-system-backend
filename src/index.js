@@ -11,6 +11,7 @@ import leaveFormatRouter from "./controllers/leaveFormat.js"
 import { jobStart } from "./config/scheduled.js"
 import leaveTypeRouter from "./controllers/leaveType.js"
 import demoRouter from "./controllers/demo.js"
+import userRouter from "./controllers/user.js"
 
 const app = express()
 dotenv.config()
@@ -44,6 +45,8 @@ app.use('/api/auth', authorizationRouter)
 app.use('/api/admin/employees', adminUserRouter)
 app.use('/api/admin/leave-format', leaveFormatRouter)
 app.use('/api/admin/leave-type', leaveTypeRouter)
+//
+app.use("/api/user", userRouter)
 
 // 
 app.use("/api/demo", demoRouter)
